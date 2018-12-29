@@ -1753,7 +1753,7 @@
       "        },",
       "        \"gatewayIpAddress\": \"${3:gatewayIP}\"",
       "      }",
-      "    },"
+      "    }"
     ],
     "description": "VPN Local Network Gateway"
   },
@@ -1761,7 +1761,7 @@
   "VPN Virtual Network Gateway": {
     "prefix": "arm-vpn-vnet-gateway",
     "body": [
-      "{",
+      "    {",
       "      \"apiVersion\": \"2015-06-15\",",
       "      \"type\": \"Microsoft.Network/virtualNetworkGateways\",",
       "      \"name\": \"${1:gw-name}\",",
@@ -1800,7 +1800,7 @@
   "VPN Virtual Network Connection": {
     "prefix": "arm-vpn-vnet-connection",
     "body": [
-      " {",
+    "     {",
       "      \"apiVersion\": \"2015-06-15\",",
       "      \"name\": \"${1:connection-name}\",",
       "      \"type\": \"Microsoft.Network/connections\",",
@@ -1820,7 +1820,7 @@
       "        \"routingWeight\": ${5:routingweight},",
       "        \"sharedKey\": \"${6:sharedkey}\"",
       "      }",
-      "    },"
+      "    }"
     ],
     "description": "VPN Virtual Network Connection"
   }
